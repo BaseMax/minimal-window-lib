@@ -10,10 +10,6 @@ int main() {
     while (window_is_open()) {
         poll_events();
 
-        if (key_pressed(KEY_ESCAPE)) {
-            close_window();
-        }
-
         if (mouse_button_pressed(MOUSE_BUTTON_LEFT)) {
             printf("Left mouse button clicked at (%d, %d)\n", mouse_x(), mouse_y());
         }
